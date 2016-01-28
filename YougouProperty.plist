@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>advertTime</key>
+	<real>3</real>
+	<key>advertImageUrl</key>
+	<string>http://7xqgzn.com1.z0.glb.clouddn.com/IMG_0662.PNG</string>
+	<key>advertContentUrl</key>
+	<string>http://www.yougou58.com/category.php?id=42</string>
+</dict>
+</plist>

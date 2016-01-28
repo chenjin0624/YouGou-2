@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MobClick.h"
+#import "UMOnlineConfig.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [MobClick startWithAppkey:@"56a9b8ca67e58e040c000413" reportPolicy:BATCH channelId:nil];
+    
+    [UMOnlineConfig updateOnlineConfigWithAppkey:@"56a9b8ca67e58e040c000413"];
+    
+    [AppDelegate initNavigationBarAppearance];
+    
     return YES;
 }
 
@@ -40,6 +49,13 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
++ (void)initNavigationBarAppearance
+{
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationBarBackGround"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setShadowImage:[UIImage imageNamed:@"navigationBarBackGround"]];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
 }
 
 @end
